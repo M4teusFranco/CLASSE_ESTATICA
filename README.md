@@ -11,8 +11,7 @@ quilometrosParaMilhas(double quilometros): converte uma distância em quilômetr
 gramasParaLibras(double gramas): converte uma massa em gramas para libras.
 Após criar a classe, implemente uma classe principal (Main) que chame cada um dos métodos da classe ConversorUnidades e exiba o resultado no console.
 
-![image](https://github.com/user-attachments/assets/4fbbc88d-5e01-4230-b597-1750037ddd99)
-
+![image](https://github.com/user-attachments/assets/5efc1c5a-fc6a-4294-8aaf-ddc7dfae1a94)
 
 ### 📋 Pré-requisitos
 

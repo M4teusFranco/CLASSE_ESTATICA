@@ -1,32 +1,71 @@
-# CLASSE_ESTATICA
+# Conversor de Unidades com Classes Abstratas em Java
 
-Tema: Biblioteca de Conversões
-Imagine que você está desenvolvendo um sistema para conversões de unidades, como temperatura, comprimento e massa. Sua tarefa é criar uma classe estática chamada ConversorUnidades que contenha métodos para realizar algumas conversões importantes.
+### 📋 Descrição do Projeto
 
-Enunciado:
-Crie uma classe estática chamada ConversorUnidades que deve conter os seguintes métodos:
+O sistema consiste em um conversor de unidades desenvolvido em Java utilizando o conceito de classes abstratas.
 
-celsiusParaFahrenheit(double celsius): converte uma temperatura em Celsius para Fahrenheit.
-quilometrosParaMilhas(double quilometros): converte uma distância em quilômetros para milhas.
-gramasParaLibras(double gramas): converte uma massa em gramas para libras.
-Após criar a classe, implemente uma classe principal (Main) que chame cada um dos métodos da classe ConversorUnidades e exiba o resultado no console.
+#### Classe Abstrata ConversorUnidades:
 
-![image](https://github.com/user-attachments/assets/5efc1c5a-fc6a-4294-8aaf-ddc7dfae1a94)
+Define a estrutura comum para conversores de unidades.
 
-### 📋 Pré-requisitos
+Métodos:
+- converter(double valor): abstrato, responsável pela conversão de valores.
+- getDescricao(): abstrato, retorna a descrição da conversão.
 
-- Eclipse IDE
+Atributo:
+- descricao: descrição da conversão.
+
+#### Classe Main:
+
+Permite a execução do sistema e demonstra o uso da classe abstrata com diferentes conversores concretos.
+
+Conversores Implementados:
+- Quilômetros para Milhas
+- Celsius para Fahrenheit
+- Quilogramas para Libras
+
+Cada conversor concreto herda de ConversorUnidades e implementa suas próprias regras de conversão.
+
+### 🔧 Pré-requisitos
+
+- Java JDK 8 ou superior
+- Eclipse IDE (ou outra IDE Java de sua preferência)
   
-### 🔧 Instalação
+### 🚀 Instalação e execução
 
-* Explicação de como deve ser utilizado o projeto
+1. Clone o repositório:
 
-## 🛠️ Construído com
+```
+git clone https://github.com/seu-usuario/CLASSE_ESTATICA
+```
 
-O código deve ser inicializado por uma IDE que aceite Java, como o Eclipse.
+2. Importe o projeto no Eclipse:
+- File → Import → Existing Projects into Workspace
+- Selecione a pasta do projeto clonado
 
-* IDE Eclipse
+3. Execute a classe Main localizada no pacote Main para ver a demonstração do sistema.
+
+### 🛠️ Funcionalidades Implementadas
+
+- Conversão de diferentes unidades com base em classes abstratas
+- Arquitetura flexível para adicionar novos conversores
+- Exibição de descrições das conversões realizadas
+
+### 📝 Exemplo de Saída
+
+Ao executar a classe Main, você verá uma demonstração das operações para ambos os tipos de conta, mostrando:
+
+```
+Celsius para Fahreinheit
+30 Graus Celsius são 86.0 Fahreinheit
+
+KM para Milhas
+15 KM são 9.320565 Milhas
+
+Gramas para Libras
+40 Gramas são 0.08818480000000001 Libras
+```
 
 ## ✒️ Autores
 
-* **Mateus Franco Bezerra** - *Trabalho Inicial* - CLASSE_ESTATICA
+* **Mateus Franco Bezerra** - CLASSE ESTATICA 
